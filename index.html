@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/07be92e3a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria do João</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" id="logo"><i class="fas fa-pizza-slice"></i></a>
+
+        <nav>
+            <ul>
+                <li><a href="#pedir">Fazer pedido</a></li>
+                <li><a href="#status">Status do Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+    <section>
+        <div class="logo">
+            <!--apenas background de fundo-->
+        </div>
+    </section>
+
+    <section id="pedir">
+
+        <div class="div-massa">
+
+                <h2>Monte seu pedido</h2>
+
+                <select id="select-massa">
+                    <option value="">-- Selecione a massa --</option>
+                    <option value="1">Pizza nova-iorquina</option>
+                    <option value="2">Pizza siciliana</option>
+                    <option value="3">Pizza napolitana</option>
+                </select>
+
+        </div>
+        
+
+        <div class="div-borda">
+
+               
+
+                <select id="select-borda">
+                    <option value="">-- Selecione a borda --</option>
+                    <option value="1">Sem recheio</option>
+                    <option value="2">Catupiry</option>
+                    <option value="3">Cheddar</option>
+                    <option value="4">Chocolate</option>
+                </select>
+
+        </div>
+
+        <div class="div-sabor">
+
+               
+
+                <select id="select-sabor">
+                    <option value="">-- Selecione o sabor --</option>
+                    <option value="1">Calabresa</option>
+                    <option value="2">Quatro queijos</option>
+                    <option value="3">Portuguesa</option>
+                </select>
+
+        </div>
+
+
+        <div class="confirmar">
+
+               
+
+                <select id="select-bebida">
+                        <option value="">-- Selecione a bebida --</option>
+                        <option value="1">Coca-cola</option>
+                        <option value="2">Fanta Uva</option>
+                        <option value="3">Pureza</option>
+                    </select>
+
+
+                    <select id="forma-pagamento">
+                            <option value="">-- Selecione a forma de pagamento --</option>
+                            <option value="1">Dinheiro</option>
+                            <option value="2">Pix</option>
+                            <option value="3">Cartão (na entrega)</option>
+                        </select>
+
+            <button id="finalizar-pedido">Finalizar pedido</button>
+        </div>
+        
+       
+        
+    </section>
+
+
+    <section id="status">
+
+
+
+        <div class="status-esquerda">
+
+
+         <div class="card">
+                <i class="fas fa-file-alt"></i>
+
+            <h2>Dados da pizza</h2>
+
+            <div>
+                <img id="foto-pizza">
+                <h3 id="sabor-pizza">Sabor: </h3>
+                <h3 id="massa-pizza">Massa: </h3>
+                <h3 id="borda-pizza">Borda: </h3>
+            </div>
+         </div> <!--fim card-->
+        </div>
+
+
+        <div class="status-direita">
+
+                <div class="card">
+                        <i class="fas fa-shopping-cart"></i>
+        
+                <h2>Status do pedido</h2>
+
+                <div>
+                    <select id="status-entrega">
+                        <option value="">-- Aguarde --</option>
+                        <option value="1">Aguardando restaurante</option>
+                        <option value="2">Pedido em andamento</option>
+                        <option value="3">Aguardando motoboy</option>
+                        <option value="4">Saiu para entrega</option>
+                        <option value="5">Finalizado</option>
+                    </select>
+                    
+                    <select id="tempo_entrega">
+                            <option value="">-- Tempo de entrega --</option>
+                            <option value="1">30min a 40min</option>
+                            <option value="2">40min a 60min</option>
+                            <option value="3">60min a 120min</option>
+                        </select>
+
+                        <h3 id="entrega-pagamento">Forma de pagamento: </h3>
+
+                    
+                  
+                </div>
+             </div>
+
+
+                <button id="status-whatsapp" class="btn-contato">Enviar endereço via whatsapp</button>
+
+        </div>
+
+    </section>
+    
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por Graziela Guimarães</p>
+    </footer>
+    
+    <script src="pizzaria.js"></script>
+</body>
+</html>

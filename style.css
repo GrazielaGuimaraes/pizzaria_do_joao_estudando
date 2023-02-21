@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+
+    background-color: #cf0638;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header #logo {
+
+    color: yellow;
+    font-size: 48px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 5px;
+    border: 1px solid yellow;
+}
+
+header ul li:hover {
+    transition: 0.4s;
+    border: 1px solid #fff;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 600;
+}
+
+.logo {
+
+    height: 100vh;
+    background: url("https://thumbs.dreamstime.com/b/um-fundo-colorido-de-pizza-no-estilo-desenho-animado-piza-colorida-este-pode-ser-usado-como-papel-parede-para-restaurante-226434254.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#pedir{
+    
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+     background-color: yellow;
+     position: relative;
+}
+
+
+
+
+
+.div-massa  {
+
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.div-massa h2 {
+    color: #cf0638;
+}
+
+.div-massa select {
+
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+}
+
+
+.div-borda  {
+
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.div-borda select {
+
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+}
+
+
+
+
+.div-sabor  {
+
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.div-sabor h2 {
+    color: #cf0638;
+}
+
+.div-sabor select {
+
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+}
+
+
+
+.confirmar  {
+
+    position: absolute;
+    top: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.confirmar #select-bebida {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+    margin-top: 15px;
+}
+
+.confirmar #forma-pagamento {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+    margin-top: 30px;
+}
+
+
+.confirmar button {
+
+    margin-top: 32px;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #cf0638;
+}
+
+
+
+
+
+
+
+
+#status{
+    
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     background-color: #cf0638;
+     position: absolute;
+     top: 1200px;
+     width: 100%;
+}
+
+
+footer  {
+
+    height: 100px;
+    background: #000;
+    position: absolute;
+    top: 1800px;
+    width: 100%;
+    color: #ffffff;
+    line-height: 100px;
+    text-align: center;
+    
+}
+
+
+
+.status-esquerda  {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+
+    width: 350px;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.status-direita  {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-direita .card select {
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-contato {
+
+    background-color: green;
+    color: #fff;
+    padding: 8px;
+    margin-top: 15px;
+    border: none;
+}
+
+
+@media (max-width: 600px){
+
+
+    .logo {
+        height: 300px;
+    }
+
+    #pedir{
+        height: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: transparent;
+    }
+
+  
+
+
+  
+
+    
+#status {
+    flex-direction: column;
+}
+
+   
+
+    .status-direita {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .status-esquerda {
+        width: 100%;
+    }
+
+
+    footer {
+
+        top :2000px;
+    }
+
+    
+
+ 
+}
